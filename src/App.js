@@ -42,7 +42,7 @@ const App = () => {
     let updatedBoard = [];
     for (let row = 0; row < squares.length; row++) {
       for (let col = 0; col < squares.length; col++) {
-        if (updatedSquare === squares[row][col].id && squares[row][col].value === '') {
+        if (updatedSquare === squares[row][col].id && squares[row][col].value === '' && winner === '') {
           squares[row][col]['value'] = (swapPlayer() ? PLAYER_1 : PLAYER_2);
         }
       }
